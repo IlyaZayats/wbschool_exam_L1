@@ -6,8 +6,8 @@ import (
 )
 
 func mySleep(d time.Duration) {
-	ticker := time.NewTicker(d)
-	<-ticker.C
+	timer := time.NewTimer(d)
+	<-timer.C
 }
 
 func main() {
