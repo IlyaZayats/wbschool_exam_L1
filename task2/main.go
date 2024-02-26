@@ -16,13 +16,4 @@ func main() {
 		}(item)
 	}
 	wg.Wait()
-	//wg.Add(1)
-	//go func() {
-	//	for i := range ch {
-	//		fmt.Println(i)
-	//	}
-	//	close(ch)
-	//	wg.Done()
-	//}()
-	//wg.Wait()
 }
